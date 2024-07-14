@@ -1,0 +1,15 @@
+{
+  "name": "@alundiak/dna-scripts",
+  "version": "1.0.0",
+  "description": "Various DNA scripts, which I need for my genetics research",
+  "main": "reFormatSnps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "reformatSNPs": "node ./reformat-SNPs/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
+}
