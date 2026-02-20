@@ -1,10 +1,10 @@
-import * as fs from 'node:fs/promises';
-import * as path from 'node:path';
+import * as fs from "node:fs/promises";
+import * as path from "node:path";
 
-import { Profile, Similarity } from './models.js';
-import { isTsvFile, normalizeLineToArray, simpleLogMatch } from './utils.js';
+import { Profile, Similarity } from "./models";
+import { isTsvFile, normalizeLineToArray, simpleLogMatch } from "./utils";
 
-const DIR = './data/FGC63213';
+const DIR = "./data/FGC63213";
 // const DIR = './data/FT8963';
 
 function similarity(a: string[], b: string[]): number {
@@ -37,7 +37,7 @@ async function loadProfiles(): Promise<Profile[]> {
 
     if (!stat.isFile()) continue;
 
-    const content = await fs.readFile(full, 'utf8');
+    const content = await fs.readFile(full, "utf8");
     const line = content.split(/\r?\n/).find(Boolean);
 
     if (!line) continue;

@@ -11,7 +11,7 @@
     "typescript": "^5.9.3"
   },
   "scripts": {
-    "start": "tsx compare.ts",
+    "start": "tsx ./src/compare.ts",
     "check": "tsc --noEmit"
   }
 }
