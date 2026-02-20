@@ -1,0 +1,15 @@
+{
+  "name": "@alundiak/reformat-snp-script",
+  "version": "1.0.0",
+  "description": "Script to re-format SNP Results from downloaded CSV from FTDNA My Y-DNA Haplotree to simplified TXT file",
+  "main": "./index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^3.2.0"
+  }
+}
