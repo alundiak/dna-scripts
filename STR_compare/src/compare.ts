@@ -70,7 +70,7 @@ async function main() {
   for (const r of results) {
     const percentage = r.score * 100;
     // maybe optional
-    if (percentage > 70) {
+    if (percentage >= 80) {
       // logWithColorette(r); // does have bad performance
       simpleLogMatch(r);
     }
